@@ -12,7 +12,7 @@ import android.view.animation.AccelerateDecelerateInterpolator
 class LinePagerIndicatorDecoration : RecyclerView.ItemDecoration() {
 
     private val colorActive = -0x1
-    private val colorInactive = 0x66FFFFFF
+    private val colorInactive = 0x66000000
 
     /**
      * Height of the space the indicator takes up at the bottom of the view.
