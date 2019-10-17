@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".ui.activites.MainActivity"
+                android:background="@color/white">
+
+    <FrameLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/line">
+
+    </FrameLayout>
+
+
+    <View
+            android:id="@+id/line"
+            android:layout_above="@id/navbar"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"
+    />
+
+    <LinearLayout
+            android:id="@+id/navbar"
+            android:background="@color/lightgray"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="60dp">
+
+        <ImageButton
+                android:id="@+id/home"
+                android:background="@color/transparent"
+                android:src="@drawable/home"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+        <ImageButton
+                android:id="@+id/search"
+                android:background="@color/transparent"
+                android:src="@drawable/search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+        <ImageButton
+                android:id="@+id/add"
+                android:background="@color/transparent"
+                android:src="@drawable/add"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+        <ImageButton
+                android:id="@+id/favorites"
+                android:background="@color/transparent"
+                android:src="@drawable/favorites"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+        <ImageButton
+                android:id="@+id/avatar"
+                android:background="@color/transparent"
+                android:src="@drawable/avatar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

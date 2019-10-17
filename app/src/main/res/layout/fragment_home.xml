@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".ui.fragments.HomeFragment">
+
+    <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:background="@color/white">
+
+        <ImageButton
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="17dp"
+                android:background="@color/transparent"
+                android:src="@drawable/camera"
+                android:layout_width="24dp"
+                android:layout_height="21dp"/>
+
+        <ImageView
+                android:layout_marginTop="15dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="106dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo_instagram"/>
+
+        <ImageButton
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="17dp"
+                android:layout_width="24dp"
+                android:layout_height="20dp"
+                android:src="@drawable/direct"
+                android:background="@color/transparent"
+        />
+
+        <View
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+              android:background="@color/gray"/>
+
+    </RelativeLayout>
+
+    <ListView
+            android:layout_below="@id/header"
+            android:id="@+id/feed"
+            android:divider="@color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ListView>
+
+
+</RelativeLayout>
